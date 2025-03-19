@@ -11,7 +11,7 @@ sudo apt install -y apache2 mariadb-server php php-curl php-mbstring php-xml php
 #Configure DB
 sudo mysql_secure_installation
 sudo mysql -e "CREATE DATABASE snipeit;"
-sudo mysql -e "CREATE USER 'snipeuser'@'localhost' IDENTIFIED BY 'ваш_пароль';"
+sudo mysql -e "CREATE USER 'snipeuser'@'localhost' IDENTIFIED BY 'your_password';"
 sudo mysql -e "GRANT ALL PRIVILEGES ON snipeit.* TO 'snipeuser'@'localhost';"
 sudo mysql -e "FLUSH PRIVILEGES;"
 
